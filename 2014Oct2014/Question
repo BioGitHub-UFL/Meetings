@@ -1,0 +1,7 @@
+Hi Friends,
+I need to concatenate a lot of alignments.
+They are protein-coding and aligned by codons. 
+I'm working on a supertree for Lepodoptera, so substitutional saturation is a concern and I want to drop the 3rd codon position.
+Ideally, each gene would have a seperate partition too.
+
+-BioGitHub
