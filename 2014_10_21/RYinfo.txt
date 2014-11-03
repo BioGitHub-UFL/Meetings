@@ -1,0 +1,3 @@
+PSMB4.fas, 3
+PSMB2.fas, 3
+ASPM.fas, 3
