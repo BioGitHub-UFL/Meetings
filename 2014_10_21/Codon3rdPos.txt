@@ -1,0 +1,30 @@
+Hi
+
+I just saw your post. So you want to drop the 3rd codon position. I think RY coding might help you. I am currently working on developing a utility that does concatenation and few other analysis. 
+
+https://github.com/Ambuj-UF/ConCat-1.0
+
+Put you input sequences in “Input” folder.
+Create a file that contains the list of all files and the choice of RY position. IN your case you can do something like this.
+
+File1.fas, 3
+File2.fas, 3
+
+the second object is for selecting RY coding position. Here 3 will do the RY coding for 3rd codon position. 
+
+Now since you have large number of input files, I attached a python program rycrt.py that will create RYinfo.txt file for you. Put this file in the package home directory and run
+
+python ConCat.py -RY RYinfo.txt
+
+It will produce “Combined.nex” output file and RYoutput.nex file. I am still working on the documentation. Drop me an email at ambuj@ufl.edu if you need any help.
+
+By default the program takes nexus file as input. You can also define different file type by argument -itype
+
+python ConCat.py -itype fasta -RY RYinfo.txt
+python ConCat.py -itype phylip-relaxed -RY RYinfo.txt
+
+use “python ConCat.py -h” for help.
+
+Note: BioPython is a prerequisite for this tool.
+
+ 
